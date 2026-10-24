@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sehat Studio</title>
+  <meta name="description" content="Sehat Studio is a high-energy gym and strength coaching space with classes, machine training, coaching, and transformation-focused results.">
+  <meta name="author" content="uiCookies">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sehat Studio">
+  <meta property="og:description" content="A dark, muscular, high-energy gym experience with classes, equipment guidance, and results-driven training.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar" style="position:fixed; top:0; right:1rem; z-index:2000; background:rgba(17,17,17,0.9); color:#f7b32b; font-size:0.68rem; letter-spacing:0.16em; text-transform:uppercase; padding:0.58rem 1rem; border:1px solid rgba(255,180,60,0.45); border-radius:0 0 12px 12px; box-shadow:0 0 0 1px rgba(255,180,60,0.15), 0 12px 28px rgba(247,179,43,0.18); text-shadow:0 0 12px rgba(247,179,43,0.6); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+    Developer: Arush
+  </div>
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap">
+      <nav class="nav" id="mainNav" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Sehat Studio home">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 11-13h-7l0-7Z" fill="currentColor"/></svg>
+          </span>
+          <b>Sehat</b> Studio
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#programs">Classes</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#coaches">Coaches</a></li>
+          <li><a href="#pricing">Membership</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a class="btn btn--sm" href="#trial">Join now</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a class="btn btn--sm" href="#trial">Free trial
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" aria-labelledby="hero-h">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1600&q=80" alt="Muscular bodybuilder training with weights in a high-energy gym">
+      </div>
+      <div class="wrap hero__inner">
+        <p class="eyebrow">CrossFit · Barbell · Conditioning</p>
+        <h1 class="display" id="hero-h">Outwork<br><span class="stroke">yesterday.</span></h1>
+        <p class="hero__sub">Denver's home for functional strength and metabolic conditioning. Small classes, real coaching, and a floor with zero ego — just the work.</p>
+        <div class="hero__actions">
+          <a class="btn" href="#trial">Start your free week
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#schedule">See the schedule</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="n"><b data-count="1240">1,240</b></div>
+            <div class="l">Active members</div>
+          </div>
+          <div class="hero__stat">
+            <div class="n"><b data-count="40">40</b>+</div>
+            <div class="l">Classes / week</div>
+          </div>
+          <div class="hero__stat">
+            <div class="n"><b data-count="18">18</b></div>
+            <div class="l">Certified coaches</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">Scroll to train</div>
+    </section>
+
+    <!-- ======================= MARQUEE ======================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Strength</span><span>Conditioning</span><span>Community</span><span>No Contracts</span><span>Coached, Not Crowded</span>
+        <span>Strength</span><span>Conditioning</span><span>Community</span><span>No Contracts</span><span>Coached, Not Crowded</span>
+      </div>
+    </div>
+
+    <!-- ======================= STATS BAND ======================= -->
+    <section class="section" aria-label="Studio by the numbers">
+      <div class="wrap">
+        <div class="statband" data-reveal>
+          <div class="statband__cell">
+            <div class="statband__n"><b data-count="11">11</b></div>
+            <div class="statband__l">Years on Blake St.</div>
+          </div>
+          <div class="statband__cell">
+            <div class="statband__n"><b data-count="6800">6,800</b></div>
+            <div class="statband__l">Sq ft of training floor</div>
+          </div>
+          <div class="statband__cell">
+            <div class="statband__n"><b data-count="96">96</b>%</div>
+            <div class="statband__l">12-month retention</div>
+          </div>
+          <div class="statband__cell">
+            <div class="statband__n"><b data-count="12">12</b></div>
+            <div class="statband__l">Members per class cap</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PROGRAMS ======================= -->
+    <section class="section section--alt" id="programs" aria-labelledby="prog-h">
+      <div class="wrap">
+        <div class="sect-head" data-reveal>
+          <p class="eyebrow">What we train</p>
+          <h2 class="sect-title" id="prog-h">Four ways to<br>get after it</h2>
+          <p class="muted">Every session is programmed by our coaching staff and scaled to you on the day. Walk in a beginner, leave knowing exactly what to do next.</p>
+        </div>
+
+        <div class="programs">
+          <article class="prog" data-reveal>
+            <span class="prog__num">01</span>
+            <div class="prog__img"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Indian bodybuilder training hard in a gym"></div>
+            <p class="prog__meta">Signature</p>
+            <h3>CrossFit WOD</h3>
+            <p>Constantly varied, high-intensity functional movement. The workout of the day blends lifting, gymnastics, and cardio into 60 hard, coached minutes.</p>
+            <div class="prog__foot">
+              <span class="prog__tag">60 min · All levels</span>
+              <a class="tlink" href="#schedule">Times <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="prog" data-reveal data-delay="1">
+            <span class="prog__num">02</span>
+            <div class="prog__img"><img src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=1200&q=80" alt="Muscular Indian athlete lifting heavy weights"></div>
+            <p class="prog__meta">Get strong</p>
+            <h3>Barbell Club</h3>
+            <p>Dedicated strength and Olympic lifting blocks. Snatch, clean &amp; jerk, squat and press with hands-on coaching and a percentage-based progression.</p>
+            <div class="prog__foot">
+              <span class="prog__tag">75 min · Intermediate</span>
+              <a class="tlink" href="#schedule">Times <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="prog" data-reveal data-delay="2">
+            <span class="prog__num">03</span>
+            <div class="prog__img"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80" alt="Strong Indian bodybuilder in an intense training session"></div>
+            <p class="prog__meta">Build the engine</p>
+            <h3>Hyrox &amp; Metcon</h3>
+            <p>Race-style conditioning that pairs running and functional stations. Purpose-built to prep you for Hyrox and to make everything else feel easy.</p>
+            <div class="prog__foot">
+              <span class="prog__tag">50 min · Advanced</span>
+              <a class="tlink" href="#schedule">Times <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="prog" data-reveal data-delay="3">
+            <span class="prog__num">04</span>
+            <div class="prog__img"><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80" alt="Strong muscular athlete doing focused gym training"></div>
+            <p class="prog__meta">Move better</p>
+            <h3>Mobility &amp; Recovery</h3>
+            <p>Breath work, joint prep, and guided flows that keep you training pain-free. The unglamorous stuff that keeps you in the game for decades.</p>
+            <div class="prog__foot">
+              <span class="prog__tag">45 min · All levels</span>
+              <a class="tlink" href="#schedule">Times <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= EQUIPMENT ======================= -->
+    <section class="section" id="equipment" aria-labelledby="equip-h">
+      <div class="wrap">
+        <div class="sect-head" data-reveal>
+          <p class="eyebrow">Strength floor</p>
+          <h2 class="sect-title" id="equip-h">Machines that build power</h2>
+          <p class="muted">Every machine is designed to help you train with control, confidence, and consistency. Start light, learn the movement pattern, and progressively add load as your form stays sharp.</p>
+        </div>
+
+        <div class="equipment__grid">
+          <article class="equipment-card" data-reveal>
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="Modern treadmill in a high-end gym">
+            <div class="equipment-card__body">
+              <p class="equipment-card__meta">Cardio</p>
+              <h3>Treadmill</h3>
+              <p><strong>How to use:</strong> Step onto the belt, hold the rails for balance, then start at a low speed and gradually increase. Keep your posture tall, brace your core, and use the incline to build endurance without overstriding.</p>
+            </div>
+          </article>
+
+          <article class="equipment-card" data-reveal data-delay="1">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Leg press machine in a strength training gym">
+            <div class="equipment-card__body">
+              <p class="equipment-card__meta">Lower body</p>
+              <h3>Leg Press</h3>
+              <p><strong>How to use:</strong> Sit with your back flat against the pad, place feet shoulder-width apart, and lower the platform until your knees track naturally. Press through your midfoot and avoid locking the knees at the top.</p>
+            </div>
+          </article>
+
+          <article class="equipment-card" data-reveal data-delay="2">
+            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80" alt="Cable machine with adjustable pulleys in a gym">
+            <div class="equipment-card__body">
+              <p class="equipment-card__meta">Strength</p>
+              <h3>Cable Machine</h3>
+              <p><strong>How to use:</strong> Set the pulley height to match the motion, grab the handle with a firm grip, and maintain a stable torso. Pull through the full range of motion and control the return so the movement stays smooth and consistent.</p>
+            </div>
+          </article>
+
+          <article class="equipment-card" data-reveal data-delay="3">
+            <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=900&q=80" alt="Rowing machine in a gym for endurance training">
+            <div class="equipment-card__body">
+              <p class="equipment-card__meta">Conditioning</p>
+              <h3>Rowing Machine</h3>
+              <p><strong>How to use:</strong> Sit tall, connect the feet, and drive with your legs before leaning back and pulling with the arms. Keep the stroke efficient: legs first, then torso, then arms, with a controlled finish.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= DIET PLAN ======================= -->
+    <section class="section section--alt" id="diet-plan" aria-labelledby="diet-h">
+      <div class="wrap">
+        <div class="sect-head" data-reveal>
+          <p class="eyebrow">Fuel for results</p>
+          <h2 class="sect-title" id="diet-h">Weekly diet plan</h2>
+          <p class="muted">Choose the version that matches your eating preference. Both plans are balanced for muscle gain, recovery, strength, and steady energy across the week.</p>
+        </div>
+
+        <div class="diet-plan__wrapper" data-reveal>
+          <div class="diet-plan__tabs" role="tablist" aria-label="Diet plan preference">
+            <button class="diet-plan__tab is-active" type="button" aria-selected="true">Veg</button>
+            <button class="diet-plan__tab" type="button" aria-selected="false">Non-Veg</button>
+          </div>
+
+          <div class="diet-plan__panel is-active">
+            <div class="diet-plan__grid">
+              <article class="diet-card"><h3>Monday</h3><p><strong>Breakfast:</strong> Overnight oats with banana, chia seeds, peanut butter, and soy milk.</p><p><strong>Lunch:</strong> Rajma rice, cucumber salad, curd, and seasonal vegetables.</p><p><strong>Dinner:</strong> Paneer tikka, dal, roti, and sautéed spinach.</p></article>
+              <article class="diet-card"><h3>Tuesday</h3><p><strong>Breakfast:</strong> Besan chilla with spinach, tomato, and mint chutney.</p><p><strong>Lunch:</strong> Veg khichdi with curd and salad.</p><p><strong>Dinner:</strong> Tofu curry, brown rice, and stir-fried broccoli.</p></article>
+              <article class="diet-card"><h3>Wednesday</h3><p><strong>Breakfast:</strong> Greek yogurt bowl with berries, almonds, and flax seeds.</p><p><strong>Lunch:</strong> Lentil soup, quinoa, and roasted mixed vegetables.</p><p><strong>Dinner:</strong> Chickpea wrap with avocado, sprouts, and a side of salad.</p></article>
+              <article class="diet-card"><h3>Thursday</h3><p><strong>Breakfast:</strong> Poha with peas, peanuts, and lemon.</p><p><strong>Lunch:</strong> Paneer bhurji with roti and cucumber salad.</p><p><strong>Dinner:</strong> Soya chunks curry, millet roti, and boiled vegetables.</p></article>
+              <article class="diet-card"><h3>Friday</h3><p><strong>Breakfast:</strong> Protein smoothie with oats, berries, and almond milk.</p><p><strong>Lunch:</strong> Dal, rice, cucumber raita, and sautéed okra.</p><p><strong>Dinner:</strong> Vegetable pulao with sprouts salad and paneer sauté.</p></article>
+              <article class="diet-card"><h3>Saturday</h3><p><strong>Breakfast:</strong> Idli with sambar and coconut chutney.</p><p><strong>Lunch:</strong> Black bean rice bowl with salsa, corn, and avocado.</p><p><strong>Dinner:</strong> Stuffed capsicum with lentils, curd, and roasted potatoes.</p></article>
+              <article class="diet-card"><h3>Sunday</h3><p><strong>Breakfast:</strong> Multigrain toast with peanut butter and banana.</p><p><strong>Lunch:</strong> Veg thali with dal, seasonal sabzi, rice, and salad.</p><p><strong>Dinner:</strong> Vegetable biryani with cucumber raita and yogurt dip.</p></article>
+            </div>
+          </div>
+
+          <div class="diet-plan__panel" aria-hidden="true">
+            <div class="diet-plan__grid">
+              <article class="diet-card"><h3>Monday</h3><p><strong>Breakfast:</strong> Egg scramble with spinach, multigrain toast, and fruit.</p><p><strong>Lunch:</strong> Grilled chicken breast, brown rice, and mixed vegetables.</p><p><strong>Dinner:</strong> Chicken curry, chapati, and green salad.</p></article>
+              <article class="diet-card"><h3>Tuesday</h3><p><strong>Breakfast:</strong> Oats with whey, berries, and nuts.</p><p><strong>Lunch:</strong> Chicken quinoa bowl with avocado and greens.</p><p><strong>Dinner:</strong> Fish fillet, roasted potatoes, and steamed vegetables.</p></article>
+              <article class="diet-card"><h3>Wednesday</h3><p><strong>Breakfast:</strong> Cottage cheese bowl with banana, walnuts, and seeds.</p><p><strong>Lunch:</strong> Chicken thigh, sweet potato, and salad bowl.</p><p><strong>Dinner:</strong> Lean beef mince with rice, peas, and greens.</p></article>
+              <article class="diet-card"><h3>Thursday</h3><p><strong>Breakfast:</strong> Omelet with mushrooms, peppers, and toast.</p><p><strong>Lunch:</strong> Turkey wrap with yogurt dip and salad.</p><p><strong>Dinner:</strong> Salmon, potatoes, and sautéed beans.</p></article>
+              <article class="diet-card"><h3>Friday</h3><p><strong>Breakfast:</strong> Protein smoothie with oats, banana, and peanut butter.</p><p><strong>Lunch:</strong> Chicken rice bowl with vegetables and avocado.</p><p><strong>Dinner:</strong> Turkey chili with beans and side salad.</p></article>
+              <article class="diet-card"><h3>Saturday</h3><p><strong>Breakfast:</strong> Eggs, toast, and orange slices.</p><p><strong>Lunch:</strong> Shrimp stir-fry with rice and mixed vegetables.</p><p><strong>Dinner:</strong> Chicken kebab with roti, salad, and yogurt dip.</p></article>
+              <article class="diet-card"><h3>Sunday</h3><p><strong>Breakfast:</strong> Overnight oats with yogurt, berries, and nuts.</p><p><strong>Lunch:</strong> Chicken salad with quinoa, greens, and seeds.</p><p><strong>Dinner:</strong> Baked fish, millet, and roasted seasonal vegetables.</p></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ATTENDANCE ======================= -->
+    <section class="section section--alt" id="attendance" aria-labelledby="att-h">
+      <div class="wrap">
+        <div class="attendance" data-reveal>
+          <div class="sect-head">
+            <p class="eyebrow">Member check-in</p>
+            <h2 class="sect-title" id="att-h">Log in &amp; out time</h2>
+            <p class="muted">Use this quick log to record when someone enters the gym and when they leave for the day.</p>
+          </div>
+
+          <div class="attendance__grid">
+            <form id="attendanceForm" class="attendance__form" autocomplete="off">
+              <div class="field-group">
+                <label for="memberName">Member name</label>
+                <input id="memberName" name="memberName" type="text" placeholder="Enter member name" required>
+              </div>
+
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="visitDate">Date</label>
+                  <input id="visitDate" name="visitDate" type="date" required>
+                </div>
+                <div class="field-group">
+                  <label for="inTime">In time</label>
+                  <input id="inTime" name="inTime" type="time" required>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="outTime">Out time</label>
+                <input id="outTime" name="outTime" type="time" placeholder="Optional if still inside">
+              </div>
+
+              <button class="btn btn--block" type="submit">Save visit</button>
+            </form>
+
+            <div class="attendance__panel">
+              <div class="attendance__header">
+                <h3>Today’s gym log</h3>
+                <span class="attendance__badge">Live</span>
+              </div>
+              <ul id="attendanceList" class="attendance__list" aria-live="polite"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SCHEDULE ======================= -->
+    <section class="section" id="schedule" aria-labelledby="sched-h">
+      <div class="wrap">
+        <div class="sect-head" data-reveal>
+          <p class="eyebrow">Weekly timetable</p>
+          <h2 class="sect-title" id="sched-h">Pick your hour</h2>
+          <p class="muted">Sessions run before dawn through evening, seven days a week. Reserve your spot in the member app — classes cap at 12 so the coach always sees you.</p>
+        </div>
+
+        <div class="sched" data-reveal>
+          <div class="sched__tabs" role="tablist" aria-label="Class schedule by day">
+            <button class="sched__tab" role="tab" id="tab-mon" aria-controls="panel-mon" aria-selected="true"><span class="d1">Monday</span><span class="d2">Mon</span></button>
+            <button class="sched__tab" role="tab" id="tab-tue" aria-controls="panel-tue" aria-selected="false" tabindex="-1"><span class="d1">Tuesday</span><span class="d2">Tue</span></button>
+            <button class="sched__tab" role="tab" id="tab-wed" aria-controls="panel-wed" aria-selected="false" tabindex="-1"><span class="d1">Wednesday</span><span class="d2">Wed</span></button>
+            <button class="sched__tab" role="tab" id="tab-thu" aria-controls="panel-thu" aria-selected="false" tabindex="-1"><span class="d1">Thursday</span><span class="d2">Thu</span></button>
+            <button class="sched__tab" role="tab" id="tab-fri" aria-controls="panel-fri" aria-selected="false" tabindex="-1"><span class="d1">Friday</span><span class="d2">Fri</span></button>
+            <button class="sched__tab" role="tab" id="tab-sat" aria-controls="panel-sat" aria-selected="false" tabindex="-1"><span class="d1">Saturday</span><span class="d2">Sat</span></button>
+          </div>
+
+          <!-- MON -->
+          <div class="sched__panel is-active" id="panel-mon" role="tabpanel" aria-labelledby="tab-mon" tabindex="0">
+            <div class="sched__row"><div class="sched__time">05:45<small>AM</small></div><div class="sched__class">CrossFit WOD<span>Strength + metcon</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Coach Aisha">Aisha K.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">07:00<small>AM</small></div><div class="sched__class">Barbell Strength<span>Back squat cycle</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Coach Rohit">Rohit S.</div><div class="sched__level"><span class="pill pill--int">Intermediate</span></div></div>
+            <div class="sched__row"><div class="sched__time">12:10<small>PM</small></div><div class="sched__class">Express Metcon<span>30-min lunch burner</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Coach Neha">Neha V.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">05:30<small>PM</small></div><div class="sched__class">CrossFit WOD<span>Strength + metcon</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Coach Aisha">Aisha K.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">06:30<small>PM</small></div><div class="sched__class">Hyrox Conditioning<span>Run + stations</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Coach Arjun">Arjun S.</div><div class="sched__level"><span class="pill pill--adv">Advanced</span></div></div>
+          </div>
+
+          <!-- TUE -->
+          <div class="sched__panel" id="panel-tue" role="tabpanel" aria-labelledby="tab-tue" tabindex="0" hidden>
+            <div class="sched__row"><div class="sched__time">06:00<small>AM</small></div><div class="sched__class">Olympic Lifting<span>Snatch technique</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Coach Rohit">Rohit S.</div><div class="sched__level"><span class="pill pill--int">Intermediate</span></div></div>
+            <div class="sched__row"><div class="sched__time">09:00<small>AM</small></div><div class="sched__class">Foundations<span>On-ramp for new members</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Coach Aisha">Aisha K.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">12:10<small>PM</small></div><div class="sched__class">Express Metcon<span>30-min lunch burner</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Coach Neha">Neha V.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">05:30<small>PM</small></div><div class="sched__class">CrossFit WOD<span>Strength + metcon</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Coach Neha">Neha V.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">07:00<small>PM</small></div><div class="sched__class">Mobility &amp; Recovery<span>Guided flow</span></div><div class="sched__coach"><img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=400&q=80" alt="Coach Arjun">Arjun S.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+          </div>
+
+          <!-- WED -->
+          <div class="sched__panel" id="panel-wed" role="tabpanel" aria-labelledby="tab-wed" tabindex="0" hidden>
+            <div class="sched__row"><div class="sched__time">05:45<small>AM</small></div><div class="sched__class">CrossFit WOD<span>Strength + metcon</span></div><div class="sched__coach"><img src="img/coach1.jpg" alt="Coach Mara">Mara V.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">07:00<small>AM</small></div><div class="sched__class">Barbell Strength<span>Press + pull</span></div><div class="sched__coach"><img src="img/coach2.jpg" alt="Coach Deon">Deon E.</div><div class="sched__level"><span class="pill pill--int">Intermediate</span></div></div>
+            <div class="sched__row"><div class="sched__time">12:10<small>PM</small></div><div class="sched__class">Engine Builder<span>Rowing + bike intervals</span></div><div class="sched__coach"><img src="img/coach4.jpg" alt="Coach Theo">Theo B.</div><div class="sched__level"><span class="pill pill--adv">Advanced</span></div></div>
+            <div class="sched__row"><div class="sched__time">05:30<small>PM</small></div><div class="sched__class">CrossFit WOD<span>Strength + metcon</span></div><div class="sched__coach"><img src="img/coach1.jpg" alt="Coach Mara">Mara V.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">06:30<small>PM</small></div><div class="sched__class">Gymnastics Skills<span>Pull-ups, handstands, ring work</span></div><div class="sched__coach"><img src="img/coach3.jpg" alt="Coach Ivy">Ivy N.</div><div class="sched__level"><span class="pill pill--int">Intermediate</span></div></div>
+          </div>
+
+          <!-- THU -->
+          <div class="sched__panel" id="panel-thu" role="tabpanel" aria-labelledby="tab-thu" tabindex="0" hidden>
+            <div class="sched__row"><div class="sched__time">06:00<small>AM</small></div><div class="sched__class">Hyrox Conditioning<span>Run + stations</span></div><div class="sched__coach"><img src="img/coach4.jpg" alt="Coach Theo">Theo B.</div><div class="sched__level"><span class="pill pill--adv">Advanced</span></div></div>
+            <div class="sched__row"><div class="sched__time">09:00<small>AM</small></div><div class="sched__class">Foundations<span>On-ramp for new members</span></div><div class="sched__coach"><img src="img/coach1.jpg" alt="Coach Mara">Mara V.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">12:10<small>PM</small></div><div class="sched__class">Express Metcon<span>30-min lunch burner</span></div><div class="sched__coach"><img src="img/coach3.jpg" alt="Coach Ivy">Ivy N.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">05:30<small>PM</small></div><div class="sched__class">Olympic Lifting<span>Clean &amp; jerk complex</span></div><div class="sched__coach"><img src="img/coach2.jpg" alt="Coach Deon">Deon E.</div><div class="sched__level"><span class="pill pill--int">Intermediate</span></div></div>
+            <div class="sched__row"><div class="sched__time">07:00<small>PM</small></div><div class="sched__class">Mobility &amp; Recovery<span>Guided flow</span></div><div class="sched__coach"><img src="img/coach4.jpg" alt="Coach Theo">Theo B.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+          </div>
+
+          <!-- FRI -->
+          <div class="sched__panel" id="panel-fri" role="tabpanel" aria-labelledby="tab-fri" tabindex="0" hidden>
+            <div class="sched__row"><div class="sched__time">05:45<small>AM</small></div><div class="sched__class">CrossFit WOD<span>Strength + metcon</span></div><div class="sched__coach"><img src="img/coach1.jpg" alt="Coach Mara">Mara V.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">07:00<small>AM</small></div><div class="sched__class">Barbell Strength<span>Deadlift focus</span></div><div class="sched__coach"><img src="img/coach2.jpg" alt="Coach Deon">Deon E.</div><div class="sched__level"><span class="pill pill--int">Intermediate</span></div></div>
+            <div class="sched__row"><div class="sched__time">12:10<small>PM</small></div><div class="sched__class">Express Metcon<span>30-min lunch burner</span></div><div class="sched__coach"><img src="img/coach3.jpg" alt="Coach Ivy">Ivy N.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">05:00<small>PM</small></div><div class="sched__class">Friday Night Lights<span>Partner WOD + music</span></div><div class="sched__coach"><img src="img/coach1.jpg" alt="Coach Mara">Mara V.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">06:00<small>PM</small></div><div class="sched__class">Friday Night Lights<span>Partner WOD + music</span></div><div class="sched__coach"><img src="img/coach3.jpg" alt="Coach Ivy">Ivy N.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+          </div>
+
+          <!-- SAT -->
+          <div class="sched__panel" id="panel-sat" role="tabpanel" aria-labelledby="tab-sat" tabindex="0" hidden>
+            <div class="sched__row"><div class="sched__time">08:00<small>AM</small></div><div class="sched__class">Community WOD<span>Team-based, all welcome</span></div><div class="sched__coach"><img src="img/coach1.jpg" alt="Coach Mara">Mara V.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">09:15<small>AM</small></div><div class="sched__class">Community WOD<span>Team-based, all welcome</span></div><div class="sched__coach"><img src="img/coach2.jpg" alt="Coach Deon">Deon E.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+            <div class="sched__row"><div class="sched__time">10:30<small>AM</small></div><div class="sched__class">Barbell Club (Open)<span>Coached lifting, your program</span></div><div class="sched__coach"><img src="img/coach2.jpg" alt="Coach Deon">Deon E.</div><div class="sched__level"><span class="pill pill--int">Intermediate</span></div></div>
+            <div class="sched__row"><div class="sched__time">11:30<small>AM</small></div><div class="sched__class">Mobility &amp; Yoga<span>Reset for the week</span></div><div class="sched__coach"><img src="img/coach4.jpg" alt="Coach Theo">Theo B.</div><div class="sched__level"><span class="pill pill--all">All levels</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= COACHES ======================= -->
+    <section class="section section--alt" id="coaches" aria-labelledby="coach-h">
+      <div class="wrap">
+        <div class="sect-head" data-reveal>
+          <p class="eyebrow">The staff</p>
+          <h2 class="sect-title" id="coach-h">Coaches who<br>coach</h2>
+          <p class="muted">No treadmills to hide behind. Every class is led by a full-time, certified coach who knows your name, your goals, and exactly what to load on your bar.</p>
+        </div>
+
+        <div class="coaches">
+          <article class="coach" data-reveal>
+            <div class="coach__photo">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Indian female coach Aisha Kapoor, head coach">
+              <span class="coach__role">Head Coach</span>
+            </div>
+            <div class="coach__body">
+              <h3>Aisha Kapoor</h3>
+              <p class="coach__cert">CrossFit L-3 · NSCA-CPT</p>
+              <div class="coach__tags"><span>Programming</span><span>Performance</span></div>
+              <div class="coach__social">
+                <a href="#" aria-label="Aisha on Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+                <a href="#" aria-label="Aisha on X"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="coach" data-reveal data-delay="1">
+            <div class="coach__photo">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Indian male strength coach Rohit Sharma">
+              <span class="coach__role">Strength</span>
+            </div>
+            <div class="coach__body">
+              <h3>Rohit Sharma</h3>
+              <p class="coach__cert">CSCS · Powerlifting Coach</p>
+              <div class="coach__tags"><span>Powerlifting</span><span>Olympic lifts</span></div>
+              <div class="coach__social">
+                <a href="#" aria-label="Rohit on Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+                <a href="#" aria-label="Rohit on X"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="coach" data-reveal data-delay="2">
+            <div class="coach__photo">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Indian female conditioning coach Neha Verma">
+              <span class="coach__role">Conditioning</span>
+            </div>
+            <div class="coach__body">
+              <h3>Neha Verma</h3>
+              <p class="coach__cert">Hyrox Coach · Nutrition L1</p>
+              <div class="coach__tags"><span>Endurance</span><span>Cardio</span></div>
+              <div class="coach__social">
+                <a href="#" aria-label="Neha on Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+                <a href="#" aria-label="Neha on X"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="coach" data-reveal data-delay="3">
+            <div class="coach__photo">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80" alt="Indian male mobility coach Arjun Singh">
+              <span class="coach__role">Mobility</span>
+            </div>
+            <div class="coach__body">
+              <h3>Arjun Singh</h3>
+              <p class="coach__cert">FRC · RYT-500 Yoga</p>
+              <div class="coach__tags"><span>Recovery</span><span>Breath work</span></div>
+              <div class="coach__social">
+                <a href="#" aria-label="Arjun on Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+                <a href="#" aria-label="Arjun on X"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PRICING ======================= -->
+    <section class="section" id="pricing" aria-labelledby="price-h">
+      <div class="wrap">
+        <div class="sect-head center" data-reveal>
+          <p class="eyebrow center">Membership</p>
+          <h2 class="sect-title" id="price-h">No lock-ins.<br>Just show up.</h2>
+          <p class="muted">Month-to-month memberships, one honest price, and a free intro week so you can feel the room before you commit to anything.</p>
+        </div>
+
+        <div class="pricing">
+          <div class="plan" data-reveal>
+            <h3 class="plan__name">Drop-In</h3>
+            <p class="plan__desc">Travelling through or testing the water? Grab a single coached session.</p>
+            <div class="plan__price"><span class="cur">₹</span><span class="amt">2,000</span><span class="per">/ session</span></div>
+            <ul class="plan__feats">
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Any class on the timetable</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Loaner gear &amp; chalk</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Full coach attention</li>
+              <li class="off"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Open-gym access</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="#trial">Book a drop-in</a>
+          </div>
+
+          <div class="plan plan--feature" data-reveal data-delay="1">
+            <span class="plan__badge">Most popular</span>
+            <h3 class="plan__name">Unlimited</h3>
+            <p class="plan__desc">Everything on the schedule, as often as you want. The membership 9 in 10 of our members pick.</p>
+            <div class="plan__price"><span class="cur">₹</span><span class="amt">5,000</span><span class="per">/ month</span></div>
+            <ul class="plan__feats">
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited coached classes</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Open-gym access, all hours</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Member app &amp; class booking</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Free intro week to start</li>
+            </ul>
+            <a class="btn btn--block" href="#trial">Start free week</a>
+          </div>
+
+          <div class="plan" data-reveal data-delay="2">
+            <h3 class="plan__name">Strength+</h3>
+            <p class="plan__desc">Unlimited training plus the accountability of a personal coach in your corner.</p>
+            <div class="plan__price"><span class="cur">₹</span><span class="amt">10,000</span><span class="per">/ month</span></div>
+            <ul class="plan__feats">
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Unlimited</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>2 personal sessions / month</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Nutrition check-ins</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Quarterly InBody scans</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="#trial">Go Strength+</a>
+          </div>
+        </div>
+        <p class="pricing-note"><b>No contracts, no joining fee.</b> Freeze or cancel any month with a week's notice.</p>
+      </div>
+    </section>
+
+    <!-- ======================= RESULTS ======================= -->
+    <section class="section section--alt" id="results" aria-labelledby="res-h">
+      <div class="wrap">
+        <div class="sect-head" data-reveal>
+          <p class="eyebrow">Real members</p>
+          <h2 class="sect-title" id="res-h">The work<br>shows up</h2>
+          <p class="muted">Transformations from members who kept showing up. Filter by the goal they came in with.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter results by goal">
+          <button class="filter is-active" data-filter="all">All results</button>
+          <button class="filter" data-filter="strength">Strength</button>
+          <button class="filter" data-filter="fatloss">Fat loss</button>
+          <button class="filter" data-filter="performance">Performance</button>
+        </div>
+
+        <div class="results" id="resultsGrid">
+          <figure class="result" data-category="strength">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Indian member after a barbell strength program">
+            <figcaption class="result__meta">
+              <span class="result__cat">Strength</span>
+              <span class="result__name">Priya, 34</span>
+              <span class="result__stat">+65 lb back squat</span>
+            </figcaption>
+          </figure>
+          <figure class="result" data-category="fatloss">
+            <img src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=900&q=80" alt="Indian member after a fat-loss and conditioning block">
+            <figcaption class="result__meta">
+              <span class="result__cat">Fat loss</span>
+              <span class="result__name">Marcus, 41</span>
+              <span class="result__stat">-24 lb / 16 weeks</span>
+            </figcaption>
+          </figure>
+          <figure class="result" data-category="performance">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" alt="Indian member after training for a Hyrox race">
+            <figcaption class="result__meta">
+              <span class="result__cat">Performance</span>
+              <span class="result__name">Lena, 29</span>
+              <span class="result__stat">First Hyrox finish</span>
+            </figcaption>
+          </figure>
+          <figure class="result" data-category="strength">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Strong athlete training with a barbell in a gym">
+            <figcaption class="result__meta">
+              <span class="result__cat">Strength</span>
+              <span class="result__name">Sam, 38</span>
+              <span class="result__stat">405 lb deadlift PR</span>
+            </figcaption>
+          </figure>
+          <figure class="result" data-category="fatloss">
+            <img src="img/class1.jpg" alt="Member Dana after committing to five classes a week">
+            <figcaption class="result__meta">
+              <span class="result__cat">Fat loss</span>
+              <span class="result__name">Dana, 46</span>
+              <span class="result__stat">-31 lb / 6 months</span>
+            </figcaption>
+          </figure>
+          <figure class="result" data-category="performance">
+            <img src="img/class3.jpg" alt="Member Rafa after building his conditioning engine">
+            <figcaption class="result__meta">
+              <span class="result__cat">Performance</span>
+              <span class="result__name">Rafa, 27</span>
+              <span class="result__stat">Sub-7:00 2k row</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TESTIMONIALS ======================= -->
+    <section class="section" aria-labelledby="testi-h">
+      <div class="wrap">
+        <h2 class="sect-title text-center" id="testi-h" style="text-align:center" data-reveal>Voices from<br>the floor</h2>
+        <div class="testis" data-reveal style="margin-top:3rem">
+          <div class="testi is-active">
+            <div class="testi__mark" aria-hidden="true">&ldquo;</div>
+            <p class="testi__quote">I'd bounced off three big-box gyms. Sehat Studio is the first place a coach <span class="accent">actually corrected my squat</span> — nine months in I'm stronger than I've ever been.</p>
+            <div class="testi__who">
+              <img src="img/test1.jpg" alt="Portrait of Elena R.">
+              <div><div class="name">Elena R.</div><div class="sub">Member since 2023</div></div>
+            </div>
+          </div>
+          <div class="testi">
+            <div class="testi__mark" aria-hidden="true">&ldquo;</div>
+            <p class="testi__quote">The 6am crew is my alarm clock now. Small classes mean <span class="accent">nobody hides and nobody gets lost</span>. Best decision I made this year.</p>
+            <div class="testi__who">
+              <img src="img/test2.jpg" alt="Portrait of Marcus T.">
+              <div><div class="name">Marcus T.</div><div class="sub">Member since 2022</div></div>
+            </div>
+          </div>
+          <div class="testi">
+            <div class="testi__mark" aria-hidden="true">&ldquo;</div>
+            <p class="testi__quote">Came in to lose a little weight, left with a barbell habit and 30 new friends. The <span class="accent">community carries you</span> on the days you'd rather stay home.</p>
+            <div class="testi__who">
+              <img src="img/test3.jpg" alt="Portrait of Priya N.">
+              <div><div class="name">Priya N.</div><div class="sub">Member since 2024</div></div>
+            </div>
+          </div>
+          <div class="testi-dots" role="tablist" aria-label="Choose testimonial">
+            <button class="testi-dot is-active" aria-label="Testimonial 1"></button>
+            <button class="testi-dot" aria-label="Testimonial 2"></button>
+            <button class="testi-dot" aria-label="Testimonial 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CTA / TRIAL ======================= -->
+    <section class="section" id="trial" aria-labelledby="cta-h">
+      <div class="wrap">
+        <div class="cta" data-reveal>
+          <p class="eyebrow center" style="justify-content:center">Zero risk</p>
+          <h2 id="cta-h">Your first week<br>is on us.</h2>
+          <p>Seven days of unlimited classes, a Foundations session, and a chat with a coach. No card, no catch — just come train.</p>
+          <form class="cta__form" onsubmit="return false" aria-label="Claim your free week">
+            <label for="trial-email" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email address</label>
+            <input id="trial-email" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+            <button class="btn" type="submit">Claim free week
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+          <p class="cta__fine">Or call the studio: <a href="tel:+919999555555" class="accent" style="text-decoration:none">9999955555</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brandcol">
+          <a class="brand" href="#top" aria-label="Sehat Studio home">
+            <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 11-13h-7l0-7Z" fill="currentColor"/></svg></span>
+            <b>Sehat</b> Studio
+          </a>
+          <p class="footer__blurb">Solan's strength and conditioning gym. Coached classes, honest programming, and a room that pushes you further than you'd push yourself.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Sehat Studio on Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Sehat Studio on X"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+            <a href="#" aria-label="Sehat Studio on YouTube"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.5l5 2.5-5 2.5v-5Z" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Sehat Studio on Facebook"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 8h2V5h-2c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2l.5-3H14V8.5c0-.3.2-.5.5-.5Z" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Train</h4>
+          <ul>
+            <li><a href="#programs">CrossFit WOD</a></li>
+            <li><a href="#programs">Barbell Club</a></li>
+            <li><a href="#programs">Hyrox &amp; Metcon</a></li>
+            <li><a href="#programs">Mobility</a></li>
+            <li><a href="#schedule">Full schedule</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="#coaches">Our coaches</a></li>
+            <li><a href="#pricing">Membership</a></li>
+            <li><a href="#results">Member results</a></li>
+            <li><a href="#trial">Free trial</a></li>
+            <li><a href="#top">About us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Visit</h4>
+          <ul class="footer__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>Solan, Himachal Pradesh, India<br>173229</li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15v-3.3l-4-1.3-1.6 1.6a11.4 11.4 0 0 1-5-5L9.3 9.3 8 5H4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><a href="tel:+919999555555" style="color:inherit">9999955555</a></li>
+          </ul>
+          <div class="footer__hours">
+            <b>Staffed hours</b><br>
+            Mon–Fri 5:30a – 8:30p<br>
+            Sat 7:30a – 1:00p · Sun 8:00a – 12:00p
+          </div>
+          <form class="footer__news" onsubmit="return false" aria-label="Newsletter signup">
+            <label for="news-email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email</label>
+            <input id="news-email" type="email" placeholder="Get the weekly WOD" autocomplete="email">
+            <button class="btn btn--sm" type="submit" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Arush Fit Studio &middot; Free template by <a href="https://uicookies.com">uiCookies</a>.</p>
+        <div class="footer__legal">
+          <a href="#top">Privacy</a>
+          <a href="#top">Terms</a>
+          <a href="#top">Waiver</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
